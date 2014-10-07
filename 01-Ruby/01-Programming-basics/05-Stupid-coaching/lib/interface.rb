@@ -3,7 +3,7 @@ require_relative "coach_answer"
 puts "Speak to your coach !"
 phrase = gets.chomp
 
-while coach_answer(phrase) != ""
-  puts coach_answer(phrase)
+while coach_answer_enhanced(phrase) != ""
+  puts coach_answer_enhanced(phrase)
   phrase = gets.chomp
 end
