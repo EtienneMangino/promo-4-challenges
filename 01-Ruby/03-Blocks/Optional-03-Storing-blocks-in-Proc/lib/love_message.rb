@@ -1,5 +1,5 @@
 def tell(who, &message_blk)
-  # TODO: return message addressed to who
+# TODO: return message addressed to who
   "#{who}, " + message_blk.call + " !"
 end
 
