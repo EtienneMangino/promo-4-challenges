@@ -2,14 +2,25 @@ def refrain(lyrics, number_of_times = 1, vibrato = 0, strong = false)
   refrain = []
   lyrics += lyrics[lyrics.size-1] * vibrato
   lyrics.upcase! if strong
-  
-  number_of_times.times do 
+
+  number_of_times.times do
     refrain << lyrics
   end
-  
+
   refrain.join(" ")
 end
 
-def better_refrain(lyrics, options = {vibrato: 0, number_of_times: 1})
+def better_refrain(lyrics, options = {vibrato: 0, number_of_times: 1, strong: false})
   #TODO: implement this better version which breaks argument order dependency
+  refrain = []
+  lyrics += lyrics[lyrics.size-1] * options[:vibrato]
+  lyrics.upcase! if options[:strong]
+
+  options[:number_of_times].times do
+    refrain << lyrics
+  end
+
+  refrain.join(" ")
 end
+
+puts better_refrain("la la la", options = {vibrato: 2, number_of_times: 3, strong: true})
