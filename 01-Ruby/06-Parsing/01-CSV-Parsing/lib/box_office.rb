@@ -2,6 +2,7 @@
 require 'csv'
 
 def most_successfull(number, max_year, file_name)
+<<<<<<< HEAD
   #TODO: return the number most successfull movies max_year
   tab_film = []
   csv_options = { col_sep: ',', headers: true, encoding:  'UTF-8'}
@@ -26,7 +27,5 @@ def most_successfull(number, max_year, file_name)
 
 
 end
-
-p most_successfull(3, 2002, "lib/movies.csv")
 
 
