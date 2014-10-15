@@ -2,6 +2,10 @@ class Playboy
   # TODO: implement necessary getters or setters to run meeting_casanova.rb
 
   INITIAL_HAIR_LENGTH = 20  # beautiful long playboy hair
+  attr_reader :nationality
+  attr_reader :name
+  attr_reader :conquests
+  attr_accessor :hair_length
 
   def initialize(name, nationality)
     @conquests = []
