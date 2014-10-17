@@ -1,6 +1,8 @@
 require_relative 'cookbook'    # You need to create this file!
 require_relative 'controller'  # You need to create this file!
 require_relative 'router'
+require_relative 'recipe'
+require_relative 'display'
 
 CSV_FILE = File.join(File.dirname(__FILE__), 'recipes.csv')
 cookbook = Cookbook.new(CSV_FILE)
