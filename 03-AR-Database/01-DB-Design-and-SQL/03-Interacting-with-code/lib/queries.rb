@@ -8,6 +8,7 @@ def number_of_rows(db, table_name)
 end
 
 def sorted_artists(db)
+
   # TODO: return array of artists' names sorted alphabetically
   tab = db.execute("SELECT name FROM artists ORDER BY name ASC;")
   tab.map! { |x| x[0] }
@@ -26,9 +27,9 @@ def long_tracks(db, min_length)
 end
 
 
-DATABASE_PATH = File.join(File.dirname(__FILE__), '../lib/db/jukebox.sqlite')
-db = SQLite3::Database.new(DATABASE_PATH)
+# DATABASE_PATH = File.join(File.dirname(__FILE__), '../lib/db/jukebox.sqlite')
+# db = SQLite3::Database.new(DATABASE_PATH)
 
-number_of_rows(db, "albums")
-sorted_artists(db)
-love_tracks(db)
+# number_of_rows(db, "albums")
+# sorted_artists(db)
+# love_tracks(db)

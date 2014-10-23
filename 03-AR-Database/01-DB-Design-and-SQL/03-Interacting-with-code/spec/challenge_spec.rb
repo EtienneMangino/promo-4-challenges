@@ -7,7 +7,7 @@ DATABASE_PATH = File.join(File.dirname(__FILE__), '../lib/db/jukebox.sqlite')
 describe 'Queries methods' do
 
 
-  let(:db) { SQLite3::Database.new(DATABASE_PATH) }
+  let(:db) { SQLite3::Database.new(DATABASE_PATH, {results_as_hash: true}) }
 
 
   describe 'number_of_rows' do

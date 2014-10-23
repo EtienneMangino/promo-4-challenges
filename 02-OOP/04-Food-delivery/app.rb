@@ -1,6 +1,8 @@
 # TODO: require relevant files to bootstrap the app.
 # Then you can test your program with:
 #    $ ruby app.rb
+require 'sqlite3'
+
 require 'require_all'
 require 'csv'
 require_relative 'router'
@@ -34,4 +36,10 @@ def lancer_app
   router.run
 end
 
-lancer_app
+#lancer_app
+
+
+DATABASE_PATH = File.join(File.dirname(__FILE__), 'food_delivery.db')
+db = SQLite3::Database.new(DATABASE_PATH)
+tab = db.execute("SELECT name FROM customers;")
+p tab
