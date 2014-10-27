@@ -19,6 +19,10 @@ class PostView
 
   def ask_for_id
     puts "Quel post voulez vous (choisir l'id) ?"
-    gets.chomp.to_i
+    begin
+      Integer(gets.chomp)
+    rescue ArgumentError
+      puts 'Mauvais Id'
+    end
   end
 end

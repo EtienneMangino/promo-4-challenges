@@ -27,7 +27,9 @@ class PostsController
     # TODO: implement updating an existing post
     index
     id = @view.ask_for_id
+    return if id.nil?
     post = Post.find(id)
+    return puts "Mauvais Id" if post.nil?
     post.title = @view.ask_for_title
     post.url = @view.ask_for_url
     post.save
@@ -37,7 +39,9 @@ class PostsController
     # TODO: implement destroying a post
     index
     id = @view.ask_for_id
+    return if id.nil?
     post = Post.find(id)
+    return puts "Mauvais Id" if post.nil?
     post.destroy
   end
 
@@ -45,10 +49,14 @@ class PostsController
     # TODO: implement upvoting a post
     index
     id = @view.ask_for_id
+    return if id.nil?
     post = Post.find(id)
-    p post
+    return puts "Mauvais Id" if post.nil?
     post.upvote
     post.save
-    p post
+  end
+
+  def verifier_id(id)
+
   end
 end
