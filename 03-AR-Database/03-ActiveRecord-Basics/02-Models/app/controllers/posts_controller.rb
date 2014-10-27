@@ -18,7 +18,7 @@ class PostsController
     # TODO: create a post
     name = @view.ask_for_name
     url = @view.ask_for_url
-    new_post = Post.new(name: name, url: url)
+    new_post = Post.new(name: name, url: url, votes: 0)
     new_post.save
   end
 
