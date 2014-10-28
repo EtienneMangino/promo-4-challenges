@@ -21,5 +21,4 @@ class PostView
     puts "What id ?"
     Integer(gets.chomp)
   end
-
 end
