@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 720px;
 	font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
 }
 
 header {
@@ -40,4 +41,6 @@ footer {
 }
 body {
 font-weight: 300;
+=======
+>>>>>>> 85daedf1439d9481512af5e95f101bad28082901
 }
