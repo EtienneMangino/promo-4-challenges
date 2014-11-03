@@ -1,6 +1,69 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
 }
 
-/*Add some CSS rules to design your form */ 
+/*Add some CSS rules to design your form */
+
+#selection {
+
+  color: blue;
+  font-size: 30px;
+}
+#selection select{
+
+  color: red;
+  font-size: 30px;
+}
+#selection:hover {
+  border: 42px solid #25C2CA;
+  color: #D512D9;
+  font-size: 50px;
+}
+
+#nom {
+  border: 21px solid green;
+}
+
+#nom:hover {
+  border: 21px solid green;
+  color: #D512D9;
+  font-size: 50px;
+}
+
+#riche {
+  border: 8px dashed
+}
+
+#riche:hover {
+  border: 8px dashed;
+  color: red;
+  font-size: 70px;
+
+}
+.radio:hover{
+  background-color: #3D40AF;
+  font-size: 20px;
+}
+#submit{
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+}
+
+.btn-blue {
+  background-color: #3D40AF;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  border: 5px solid #3D40AF;
+  transition: all 0.3s ease;
+}
+
+.btn-blue:hover{
+  border: 150px solid #E71AE5;
+  background-color: #31F029;
+  font-size: 70px;
+}

@@ -3,3 +3,44 @@
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
+.nav-content{
+  margin: 0 auto;
+  width: 840px;
+
+}
+body {
+  font-weight: 300;
+}
+
+header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0;
+  top:0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+header h1 {
+  display: inline-block;
+  width: 500px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+nav a{
+  color: white;
+  width: 100px;
+  line-height: 100px;
+  padding: 20px;
+
+}
+nav {
+  display: inline-block;
+}
+.content{
+  margin-top: 110px;
+}

@@ -13,8 +13,42 @@
 <body>
   <div class="container">
 
-    <!--YOUR FORM HERE-->
 
+    <!--YOUR FORM HERE-->
+    <h1>Inscription au super évènement</h1>
+    <form>
+      <div id="selection">
+        <label>
+              Quel menu voulez-vous ??
+              <select>
+                <option>Que des fruits</option>
+                <option>Que du poulet</option>
+                <option>Que du saumon</option>
+              </select>
+            </label>
+      </div>
+      <br>
+      <div id="nom">
+        <label>
+          Quel est votre nom ?
+          <input type="texte" name="nom">
+        </label>
+      </div>
+      <div id="riche">
+      <p>Est ce que vous êtes riche ?</p>
+      <label>
+        Ouai carrément
+        <input type ="radio" name="riche" value="oui"class="radio">
+      </label>
+      <label>
+        Non j'ai rien !
+        <input type ="radio" name="riche" value="non"class="radio">
+      </label>
+      </div>
+      <div id="submit">
+      <input type ="submit" value="Aller GO !" class="btn-blue">
+      </div>
+    </form>
   </div>
 </body>
 </html>

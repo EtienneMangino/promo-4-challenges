@@ -3,3 +3,41 @@
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+nav {
+  padding-top: 20px;
+  float: left;
+  width: 120px;
+  border-top: 1px solid grey;
+}
+
+.content {
+  float: right;
+  width: 679px;
+  padding-left: 40px;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+
+footer {
+  padding-top: 25px;
+  clear: both;
+  border-top: 1px solid grey;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 300;
+}
